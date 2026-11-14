@@ -16,3 +16,10 @@ node_modules/
 __pycache__/
 .venv/
 venv/
+
+# build output
+dist/
+# pdf.js runtime assets copied from node_modules at build time
+public/pdfjs/
+# generated sample corpus (regenerate with `npm run samples`)
+public/samples/

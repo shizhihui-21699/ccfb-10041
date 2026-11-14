@@ -1,0 +1,31 @@
+{
+  "name": "doc-leak-detector",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Local-first document leak detection console: fingerprints protected documents and flags copied segments and leaked customer data in outgoing files.",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc --noEmit && vite build",
+    "preview": "vite preview",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "samples": "tsx tools/generate-samples.ts",
+    "eval": "tsx tools/eval.ts"
+  },
+  "dependencies": {
+    "@noble/hashes": "2.4.0",
+    "fast-xml-parser": "5.12.1",
+    "fflate": "0.8.3",
+    "lit": "3.3.3",
+    "pdfjs-dist": "6.5.438"
+  },
+  "devDependencies": {
+    "@types/node": "^24.10.0",
+    "playwright-core": "^1.56.0",
+    "tsx": "^4.23.0",
+    "typescript": "5.9.3",
+    "vite": "8.3.8",
+    "vitest": "5.1.0"
+  }
+}
